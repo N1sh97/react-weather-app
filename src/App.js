@@ -7,6 +7,13 @@ export default function App() {
       <footer>
         {" "}
         This project was coded by Nish Begum and is open sourced on
+          <a
+            href="https://github.com/N1sh97/react-weather-app.git"
+            target="_blank"
+          >
+            <br></br>
+            Github
+          </a>
       </footer>
     </div>
   );
