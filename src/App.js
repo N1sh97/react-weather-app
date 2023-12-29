@@ -1,11 +1,13 @@
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <h1> Weather App</h1>
+      <footer>
+        {" "}
+        This project was coded by Nish Begum and is open sourced on
+      </footer>
     </div>
   );
 }
-
-export default App
