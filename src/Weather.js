@@ -6,20 +6,26 @@ export default function Weather() {
     <div className="Weather">
       <form>
         <input type="search" placeholder="Search for a city..."></input>
-        <input type="submit" value="Search" class="tn-secondary btn-sm"></input>
+        <input
+          type="submit"
+          value="Search"
+          class="tn-secondary btn-sm"
+          autoFocus="on"
+        ></input>
       </form>
-      <h1>London, England</h1>
+      <h1>London</h1>
       <ul>
         <li>Monday 7:00</li>
         <li>Mostly cloudy</li>
       </ul>
-      <div className="row">
+      <div className="row mt-3">
         <div className="col-6">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
             alt="weather icon"
           />
-          6 °
+          <span className="temperature">6</span>
+          <span className="unit">°C</span>
         </div>
         <div className="col-6">
           <ul>
