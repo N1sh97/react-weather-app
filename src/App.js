@@ -1,12 +1,14 @@
 import "./App.css";
+import Weather from "./Weather";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1> Weather App</h1>
-      <footer>
-        {" "}
-        This project was coded by Nish Begum and is open sourced on
+    <div className="container">
+      <div className="App">
+        <Weather />
+        <footer>
+          {" "}
+          This project was coded by Nish Begum and is open sourced on
           <a
             href="https://github.com/N1sh97/react-weather-app.git"
             target="_blank"
@@ -14,7 +16,8 @@ export default function App() {
             <br></br>
             Github
           </a>
-      </footer>
+        </footer>
+      </div>
     </div>
   );
 }
