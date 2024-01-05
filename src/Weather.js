@@ -1,6 +1,6 @@
 import React from "react";
-import axios from "axios";
 import "./Weather.css";
+import axios from "axios"
 
 export default function Weather() {
   const apiKey = "aca4dd3643b89e94dbd3cac6cf6f2638";
