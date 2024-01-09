@@ -13,6 +13,7 @@ export default function Weather() {
       description: response.data.weather[0].description,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/rain_light.png",
       date: "Monday 08:00",
+      wind: response.data.wind.speed,
       city: response.data.name,
     });
   }
@@ -44,6 +45,7 @@ export default function Weather() {
           <div className="col-6">
             <ul>
               <li>Humidity:{weatherData.humidity}%</li>
+              <li> Wind:{weatherData.wind}Km/h</li>
             </ul>
           </div>
         </div>
