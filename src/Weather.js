@@ -13,7 +13,7 @@ export default function Weather() {
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/rain_light.png",
-      date: new date(response.data.dt * 1000),
+      date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       city: response.data.name,
     });
