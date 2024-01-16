@@ -19,16 +19,16 @@ export default function Weather() {
       city: response.data.name,
     });
   }
-function search (){
- const apiKey = "aca4dd3643b89e94dbd3cac6cf6f2638";
- let city = "London";
- let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
- axios.get(apiUrl).then(handleResponce);
-}
+  function search() {
+    const apiKey = "aca4dd3643b89e94dbd3cac6cf6f2638";
+    let city = "London";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponce);
+  }
 
   function handleSubmit(event) {
     event.preventDefault();
-search ();
+    search();
   }
 
   function handleCityChange(event) {
@@ -52,8 +52,7 @@ search ();
       </div>
     );
   } else {
-   
-
+    search();
     return "Loading...";
   }
 }
