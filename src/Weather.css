@@ -34,6 +34,11 @@
   display: inline-block;
 }
 
+.Weather canvas {
+  margin-right: 5px;
+  margin-top: 5px;
+  display: inline-block;
+}
 .Weather .temperature {
   font-weight: bold;
   color: rgb(33, 33, 33);
